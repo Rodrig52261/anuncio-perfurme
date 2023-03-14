@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    border-inline: border-box;   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@500;700&family=Open+Sans:ital@1&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Merriweather&family=Montserrat:wght@500;700&family=Open+Sans:ital@1&family=Roboto&display=swap');
+
+/*font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Fraunces', serif; */
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+.grid{
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.img img{
+    max-width: 100%;
+    display: inherit;    
+}
+
+.card-principal{
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1.perfume{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+h2.texto-principal{
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    line-height: 1em;
+    color: hsl(212, 21%, 14%);
+}
+
+p.descricao{
+    color:hsl(228, 12%, 48%);
+    line-height: 1.6em;
+}
+
+.p-principal{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 25px;
+    padding-right: 2em;
+}
+
+.p-antigo{
+    color:hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.preco{
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border:none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 12px 0;
+    transition: .3;
+}
+
+.card:hover{
+    background-color: hsl(159, 35%, 21%);
+}
+
